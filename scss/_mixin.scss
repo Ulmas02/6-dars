@@ -1,0 +1,29 @@
+
+@mixin Display($space, $gap){
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+    gap: $gap;
+}
+@mixin TextStyle($M,$P, $FS, $FW, $LH, $CLR){
+    margin: $M;
+    padding: $P;
+    font-size: $FS;
+    font-weight: $FW;
+    line-height: $LH;
+    color: $CLR;
+}
+@mixin Backgroud($URL, $size, $Postion){
+    background-image: url($URL);
+    background-repeat: repeat;
+    background-size: $size;
+    background-position: $Postion;
+}
+@mixin Postion($status, $top, $left, $bottom, $right, $M){
+    position: $status;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+    margin: $M;
+}
